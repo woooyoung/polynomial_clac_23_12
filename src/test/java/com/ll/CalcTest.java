@@ -35,11 +35,17 @@ public class CalcTest {
   void t5() {
     assertThat(Calc.run("1000 + 200")).isEqualTo(1200);
   }
-  
-  // 구현
+
   @Test
   @DisplayName("50 - 30 == 20")
   void t6() {
     assertThat(Calc.run("50 - 30")).isEqualTo(20);
   }
+
+  @Test
+  @DisplayName("3 - 1 == 2")
+  void t7() {
+    assertThat(Calc.run("3 - 1")).isEqualTo(2);
+  }
+
 }
